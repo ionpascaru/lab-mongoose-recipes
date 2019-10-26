@@ -17,7 +17,7 @@ const recipeSchema = new Schema({
     type: String,
     default: "https://images.media-allrecipes.com/images/75131.jpg"
   }, // image. Type String. Default value: https://images.media-allrecipes.com/images/75131.jpg.
-  duration: { type: Number, min: "0" }, // duration. Type Number. Min value should be 0.
+  duration: { type: Number, min: 0 }, // duration. Type Number. Min value should be 0.
   creator: String, // creator. Type String
   created: { type: Date, default: Date.now } // created. Type Date. By default today.
   // TODO: write the schema
